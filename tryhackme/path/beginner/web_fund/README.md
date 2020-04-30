@@ -43,7 +43,7 @@ export IP=10.10.172.218
 curl http://$IP:8081/ctf/get
 
 ```
->>>thm{162520bec925bd7979e9ae65a725f99f}
+>> thm{162520bec925bd7979e9ae65a725f99f}
 
 > - **POST FLAG**
 ```
