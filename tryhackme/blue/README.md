@@ -37,6 +37,7 @@ ps
 
 ```
 > Note down pid of spoolsv.exe
+>
 > pid=2568
 
 # JOHN THE RIPPER

