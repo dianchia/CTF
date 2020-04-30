@@ -141,3 +141,19 @@ Physical |
 >> - Data Link Layer 	: frame
 >>
 >> - Physical layer 	: bits  
+
+> - **How would you refer to data at layer 2 of the encapsulation process (with the OSI model)?**
+>> Frames
+>>
+> - **How would you refer to data at layer 4 of the encapsulation process (with the OSI model), if the UDP protocol has been selected?**
+>> Datagram
+>>
+> - **What process would a computer perform on a received message?**
+>> De-encapsulation
+>>
+> - **Which is the only layer of the OSI model to add a trailer during encapsulation?**
+>> Data Link
+>>
+> - **Does encapsulation provide an extra layer of security (Aye/Nay)?**
+>> Aye
+
