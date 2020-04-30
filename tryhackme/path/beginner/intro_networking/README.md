@@ -132,12 +132,12 @@ Physical |
 > Encapsulated data is given a different name at different steps of the
 > process.
 > 
-> Layers 7, 6, 5 	: data.
->
-> Transport Layer 	: segment or datagram.
->
-> Network Layer 	: packet
->
-> Data Link Layer 	: frame
->
-> Physical layer 	: bits  
+>> - Layers 7, 6, 5 	: data.
+>>
+>> - Transport Layer 	: segment or datagram.
+>>
+>> - Network Layer 		: packet
+>>
+>> - Data Link Layer 	: frame
+>>
+>> - Physical layer 	: bits  
