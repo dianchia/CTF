@@ -127,7 +127,7 @@ Physical |
 
 ## ENCAPSULATION
 
-![Process Steps](image.jpg)
+![Process Steps](image.jpeg)
 
 > Encapsulated data is given a different name at different steps of the
 > process.
