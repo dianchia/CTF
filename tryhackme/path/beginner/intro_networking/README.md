@@ -1,7 +1,7 @@
 # INTRODUCTORY NETWORKING
 
 **OSI** | 
----------
+---------| 
 Application | 
 Presentation |
 Session |
