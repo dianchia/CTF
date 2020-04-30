@@ -169,9 +169,46 @@ Physical |
 **OSI** | **TCP/IP**
 --------|-----------
 Application | Application
-Presentation |
-Session |
+Presentation | Application
+Session | Application
 Transport | Transport
 Network | Internet
 Data Link | Network Interface
-Physical |
+Physical | Network Interface
+
+> Three-way handshake must be carried out before a connection can be
+> established using TCP.
+> 1. Special request sent to remote server containing SYN (synchronise)
+> bit.
+>
+> 2. Remote server respond with packet containing SYN bit and ACK
+> (acknowledge) bit.
+>
+> 3. Send packet containing ACK bit, confirming the connection.
+
+> - **Which model was introduced first, OSI or TCP/IP?**
+>> TCP/IP
+>>
+> - **Which layer of the TCP/IP model covers the functionality of the Transport layer of the OSI model (Full Name)?**
+>> Transport
+>>
+> - **Which layer of the TCP/IP model covers the functionality of the Session layer of the OSI model (Full Name)?**
+>> Application
+>>
+> - **The Network Interface layer of the TCP/IP model covers the functionality of two layers in the OSI model. These layers are Data Link, and?.. (Full Name)?**
+>> Physical
+>>
+> - **Which layer of the TCP/IP model handles the functionality of the OSI network layer?**
+>> Internet
+>>
+> - **What kind of protocol is TCP?**
+>> Connection-based
+>>
+> - **What is SYN short for?**
+>> Synchronise
+>>
+> - **What is the second step of the three way handshake?**
+>> SYN/ACK
+>>
+> - **What is the short name for the "Acknowledgement" segment in the three-way handshake?**
+>> ACK
