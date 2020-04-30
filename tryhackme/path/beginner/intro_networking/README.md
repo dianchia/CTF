@@ -43,12 +43,14 @@ Physical |
 >> 1. Choose protocol over which the data is to be transmitted.
 >>     1. TCP -- Transmission Control Protocol
 >>     1. UDP -- User Datagram Protocol
+>>
 >> **TCP**
 >>> *Connection based*: Connection between computers is established
 >>> and maintained for the duration of the request. Allows for 
 >>> reliable transmission, ensure data is sent at an acceptable
 >>> speed and lost data is re-sent. Would be chosen if accuracy
 >>> is favoured over speed. (e.g. file transfer or loading web page)
+>>
 >> **UDP**
 >>> *Session based*: Packets of data is thrown at the receiving computer
 >>> and if it can't keep up then that's its problem. Would be chosen
