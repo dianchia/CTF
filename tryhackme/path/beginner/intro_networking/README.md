@@ -157,3 +157,21 @@ Physical |
 > - **Does encapsulation provide an extra layer of security (Aye/Nay)?**
 >> Aye
 
+## THE TCP/IP MODEL
+
+> Very similiar to OSI Model. A few year older and serves as the basis
+> for real-world networking.
+>
+> Four layers: Application, Transport, Internet and Network Interface.
+> 
+>Cover the same range of functions as the seven layers of OSI Model.
+
+**OSI** | **TCP/IP**
+--------|-----------
+Application | Application
+Presentation |
+Session |
+Transport | Transport
+Network | Internet
+Data Link | Network Interface
+Physical |
