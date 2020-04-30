@@ -64,4 +64,13 @@ https://parrot:8834
 >> login.php
 
 > - **File extension of the config file**
->>
+>> .bak
+
+> - **Directory which contains example documents**
+>> /external/phpids/0.6/docs/example
+
+> - **Vulnerability associated with X-Frame-Options**
+>> Clickjacking
+
+> - **Version of php**
+>> 5.5.9-1ubuntu4.20
