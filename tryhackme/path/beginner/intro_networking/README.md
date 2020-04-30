@@ -92,6 +92,8 @@ Physical |
 >> network, as well as receiving incoming signals and converting back to
 >> binary data.
 
+## THE OSI MODEL: AN OVERVIEW
+
 > - **Which layer would choose to send data over TCP or UDP?**
 >> 4
 >>
@@ -122,3 +124,20 @@ Physical |
 >>
 > - **Which transport layer protocol would be best suited to transmit a live video?**
 >> UDP
+
+## ENCAPSULATION
+
+![Process Steps](image.jpg)
+
+> Encapsulated data is given a different name at different steps of the
+> process.
+> 
+> Layers 7, 6, 5 	: data.
+>
+> Transport Layer 	: segment or datagram.
+>
+> Network Layer 	: packet
+>
+> Data Link Layer 	: frame
+>
+> Physical layer 	: bits  
