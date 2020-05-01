@@ -13,6 +13,6 @@ Class E | 240 - 255
 
 **Private Address Space**
 
- | 
------|------
+Class | Range
+----- | ------
 Class A | 10.0.0.0
