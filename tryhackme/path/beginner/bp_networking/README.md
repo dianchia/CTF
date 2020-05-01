@@ -10,3 +10,8 @@ Class B | 128 - 191
 Class C | 192 - 223
 Class D | 224 - 239
 Class E | 240 - 255
+
+**Private Address Space**
+
+-----|------
+Class A | 10.0.0.0
