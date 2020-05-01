@@ -1,6 +1,6 @@
 # INTRODUCTORY NETWORKING
 
-## NOTES
+## THE OSI MODEL: AN OVERVIEW
 
 **OSI** | 
 ---------| 
@@ -92,7 +92,7 @@ Physical |
 >> network, as well as receiving incoming signals and converting back to
 >> binary data.
 
-## THE OSI MODEL: AN OVERVIEW
+------------------------------------------------------------------------
 
 > - **Which layer would choose to send data over TCP or UDP?**
 >> 4
@@ -125,6 +125,9 @@ Physical |
 > - **Which transport layer protocol would be best suited to transmit a live video?**
 >> UDP
 
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
 ## ENCAPSULATION
 
 ![Process Steps](image.jpeg)
@@ -142,6 +145,8 @@ Physical |
 >>
 >> - Physical layer 	: bits  
 
+------------------------------------------------------------------------
+
 > - **How would you refer to data at layer 2 of the encapsulation process (with the OSI model)?**
 >> Frames
 >>
@@ -156,6 +161,9 @@ Physical |
 >>
 > - **Does encapsulation provide an extra layer of security (Aye/Nay)?**
 >> Aye
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ## THE TCP/IP MODEL
 
@@ -186,6 +194,8 @@ Physical | Network Interface
 >
 > 3. Send packet containing ACK bit, confirming the connection.
 
+------------------------------------------------------------------------
+
 > - **Which model was introduced first, OSI or TCP/IP?**
 >> TCP/IP
 >>
@@ -212,3 +222,55 @@ Physical | Network Interface
 >>
 > - **What is the short name for the "Acknowledgement" segment in the three-way handshake?**
 >> ACK
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+## WIRESHARK
+
+> - **Frame 1**
+>> Showing details from the pysical layer
+>>
+> - **Ethernet II**
+>> Showing details from the Data Link layer
+>>
+> - **Internet Protocol Version 4**
+>> Showing details from the Network layer
+>>
+> - **Transmission Control Protocol**
+>> Showing details from the Transport layer
+>>
+> - **Hypertext Transfer Protocol**
+>> Showing details from the Application layer
+
+------------------------------------------------------------------------
+
+> - **What is the protocol specified in the section of the request that's linked to the Application layer of the OSI and TCP/IP Models?**
+>> Domain Name System
+>>
+> - **Which layer of the OSI model does the section that shows the IP address "172.16.16.77" link to (Name of the layer)?**
+>> Network
+>>
+> - **In the section of the request that links to the Transport layer of the OSI and TCP/IP models, which protocol is specified?**
+>> User Datagram Protocol
+>>
+> - **Over what medium has this request been made (linked to the Data Link layer of the OSI model)?**
+>> Ethernet II
+>>
+> - **Which layer of the OSI model does the section that shows the number of bytes transferred (81) link to?**
+>> Physical
+>>
+> - **[Research] Can you figure out what kind of address is shown in the layer linked to the Data Link layer of the OSI model?**
+>> MAC
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+## NETWORKING TOOLS
+### PING
+
+> Can be used to determine the IP address as well
+>
+>Pretty much ubiquitous to any network enabled device.
+
+------------------------------------------------------------------------
