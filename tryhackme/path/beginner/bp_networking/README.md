@@ -1,7 +1,7 @@
 # BP: NETWORKING
 
 **IP Address Classes**
- | 
+Class | Range
 -------------------
 Class A | 1 - 127
 Class B | 128 - 191
