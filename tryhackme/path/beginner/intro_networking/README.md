@@ -267,10 +267,113 @@ Physical | Network Interface
 ------------------------------------------------------------------------
 
 ## NETWORKING TOOLS
+
 ### PING
 
 > Can be used to determine the IP address as well
 >
 >Pretty much ubiquitous to any network enabled device.
+```
+ping <target>
+```
 
 ------------------------------------------------------------------------
+
+> - **What command would you use to ping the bbc.co.uk website?**
+>> ping bbc.co.uk
+>>
+> - **Ping tryhackme.com
+What is the IP address?**
+>> 68.183.254.76
+>>
+> - **What switch lets you change the interval of sent ping requests?**
+>> -i
+>>
+> - **What switch would allow you to restrict requests to IPV4?**
+>> -4
+>>
+> - **What switch would give you a more verbose output?**
+>> -v
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+### Traceroute
+
+> Allows us to see every intemediate step between host computer and
+> remote computer.
+```
+traceroute <destination>
+```
+
+------------------------------------------------------------------------
+
+> - **What switch would you use to specify an interface when using Traceroute?**
+>> -i
+>>
+> - **What switch would you use if you wanted to use TCP requests when tracing the route?**
+>> -t
+>>
+> - **[Lateral Thinking] Which layer of the TCP/IP model will traceroute run on by default?**
+>> Internet
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+### WHOIS
+
+> Query who a domain name is registered to.
+```
+whois <domain>
+```
+>
+> Personal details are redacted in Europe but elsewhere great deal
+> of information can potentially be leaked.
+
+------------------------------------------------------------------------
+
+> - **What is the registrant postal code for facebook.com?**
+>> 94025
+>>
+> - **When was the facebook.com domain first registered?**
+>> 29/03/1997
+>>
+> - **Which city is the registrant based in?**
+>> Redmond
+>>
+> - **[OSINT] What is the name of the golf course that is near the registrant address for microsoft.com?**
+>> Bellevue golf course
+>>
+> - **What is the registered Tech Email for microsoft.com?**
+>> msnhst@microsoft.com
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+### DIG
+
+> Manually query recursive DNS servers of your choice for info
+
+```
+dig <domain> @<dns-server-ip>
+```
+
+------------------------------------------------------------------------
+
+> - **What is DNS short for?**
+>> Domain Name System
+>>
+> - **What is the first type of DNS server your computer would query when you search for a domain?**
+>> Recursive
+>>
+> - **What type of DNS server contains records specific to domain extensions (i.e. .com, .co.uk, etc)? Use the long version of the name.**
+>> Top-Level Domain
+>>
+> - **Where is the very first place your computer would look to find the IP address of a domain?**
+>> Local cache
+>>
+> - **[Research] Google runs two public DNS servers. One of them can be queried with the IP 8.8.8.8, what is the IP address of the other one?**
+>> 8.8.4.4
+>>
+> - **If a DNS query has a TTL of 24 hours, what number would the dig query show?**
+>> 86400
