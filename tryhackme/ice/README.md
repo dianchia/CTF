@@ -52,12 +52,12 @@ creds_all
 # POST EXPLOITATION
 
 
-> hashdump to dump all hash
+- **hashdump** to dump all hash
 
-> screenshare to watch remote user's desktop in real time
+- **screenshare** to watch remote user's desktop in real time
 
-> record_mic to record with mic
+- **record_mic** to record with mic
 
-> timestomp to modify timestamp
+- **timestomp** to modify timestamp
 
-> golden_ticket_create to create a golden ticket that allows us to authenticate anywhere
+- **golden_ticket_create** to create a golden ticket that allows us to authenticate anywhere

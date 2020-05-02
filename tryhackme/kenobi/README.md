@@ -20,16 +20,16 @@ HOST = KENOBI
 ```
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse -oN nmap/enum $IP -T4
 ```
-> shares found: 3
->> guests
->> anonymous
->> print$
+shares found: 3
+-guests
+-anonymous
+-print$
 
 ```
 nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount -oN nmap/rpc $IP -T4
 
 ```
-> mount point: /var
+mount point: /var
 
 # GAINING INITIAL CONTROL WITH PROFTPD
 
