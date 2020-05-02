@@ -28,9 +28,7 @@ sesion when complete.
 
 - **Layer 5 -- Session**
 Try to set up a connection with other computer across the network.
-
 Send back error if can't.
-
 If a session *can* be established then this layer will maintain it,
 as well as co-operate with the session layer of the *remote computer*
 in order to synchronise communications. Session created is **unique**
