@@ -27,8 +27,8 @@ encryption, compression or other transformation. Passed down to
 sesion when complete.
 
 - **Layer 5 -- Session**
-Try to set up a connection with other computer across the network.
-Send back error if can't.
+Try to set up a connection with other computer across the network.\
+Send back error if can't.\
 If a session *can* be established then this layer will maintain it,
 as well as co-operate with the session layer of the *remote computer*
 in order to synchronise communications. Session created is **unique**
@@ -71,14 +71,11 @@ Focus on physical addressing of the transmission. Receives packets
 from network layer (includes IP address for the remote computer) and
 adds in the physical (MAC) address of the receiving endpoint. Every
 network enabled computer has a Network Interface Card (NIC) which
-comes with a unique Media Access Control (MAC) address to identify it.
-
+comes with a unique Media Access Control (MAC) address to identify it.\
 MAC addresses are set by manufacturer and literally burnt into the
-card; they can't be changed -- although they can be spoofed.
-
+card; they can't be changed -- although they can be spoofed.\
 This layer also present the data in a format suitable for 
-transmission.
-
+transmission.\
 This layer also checks the received information to make sure it hasn's
 been corrupted during transmission, which could well happen on 
 layer 1.
