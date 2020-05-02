@@ -56,3 +56,15 @@ Class C | 192.168.0.0 - 192.168.255.255
 >>
 > - **A particularly unique address is reserved for unroutable packets, what is that address? This can also refer to all IPv4 addresses on the local machine.**
 >> 0.0.0.0
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+## Binary to Decimal
+
+An IPv4 address consists of 32 bits split up into four sections of eight bit. For example, the address 192.168.1.12 translates to this:
+```
+11000000 10101000 00000001 00001100
+```
+
+
