@@ -67,9 +67,11 @@ To solve this challenge we first load in kiwi with `load kiwi`. Then we run the 
 
 > - **Take a screenshot of the system (other steps maybe required)**
 >> No answer required.
+
 Since we loaded in kiwi, we can just use `screenshot` to get a screenshot of the Dekstop
 
 > - **RDP into the machine**
 >> No answer required
+
 RDP is enabled on this machine. So we can just use
 `rdesktop -u <username> -p <password> <ipaddress>` to log in.
