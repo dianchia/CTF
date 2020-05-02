@@ -1,0 +1,67 @@
+# Nmap 7.80 scan initiated Sat May  2 15:04:35 2020 as: nmap -sC -sV -oN nmap/init -T4 10.10.223.171
+Nmap scan report for 10.10.223.171
+Host is up (0.19s latency).
+Not shown: 986 closed ports
+PORT      STATE SERVICE            VERSION
+53/tcp    open  domain?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+80/tcp    open  http               Apache httpd 2.4.37 ((Win32) OpenSSL/1.1.1 PHP/7.2.12)
+|_http-server-header: Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12
+|_http-title: File Upload with PHP
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http           Apache httpd 2.4.37 ((Win32) OpenSSL/1.1.1 PHP/7.2.12)
+|_http-server-header: Apache/2.4.37 (Win32) OpenSSL/1.1.1 PHP/7.2.12
+|_http-title: File Upload with PHP
+| ssl-cert: Subject: commonName=localhost
+| Not valid before: 2009-11-10T23:48:47
+|_Not valid after:  2019-11-08T23:48:47
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ssl/ms-wbt-server?
+| rdp-ntlm-info: 
+|   Target_Name: WIN-MFP5G5DD67V
+|   NetBIOS_Domain_Name: WIN-MFP5G5DD67V
+|   NetBIOS_Computer_Name: WIN-MFP5G5DD67V
+|   DNS_Domain_Name: WIN-MFP5G5DD67V
+|   DNS_Computer_Name: WIN-MFP5G5DD67V
+|   Product_Version: 6.3.9600
+|_  System_Time: 2020-05-02T07:06:40+00:00
+| ssl-cert: Subject: commonName=WIN-MFP5G5DD67V
+| Not valid before: 2020-05-01T07:03:40
+|_Not valid after:  2020-10-31T07:03:40
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49159/tcp open  msrpc              Microsoft Windows RPC
+49161/tcp open  msrpc              Microsoft Windows RPC
+49163/tcp open  msrpc              Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=5/2%Time=5EAD1B9A%P=x86_64-pc-linux-gnu%r(DNSVe
+SF:rsionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x
+SF:04bind\0\0\x10\0\x03");
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -38s, deviation: 0s, median: -39s
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-05-02T07:06:37
+|_  start_date: 2020-05-02T07:03:35
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May  2 15:07:28 2020 -- 1 IP address (1 host up) scanned in 173.04 seconds
