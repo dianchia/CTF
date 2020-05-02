@@ -13,84 +13,84 @@ Data Link |
 Physical |
 
 
-> - **Layer 7 -- Application**
->> Provides networking options to programs. Works almost exclusively
->> with applications, providing interface for transmitting data. Data
->> passed down to presentation layer
->
-> - **Layer 6 -- Presentation**
->> Receives data from application layer. Data tends to be in format 
->> where app understand but not standardised format that can be
->> understand by the application layer of the *receiving computer*.
->> This layer translate the data to standardised format, handling any
->> encryption, compression or other transformation. Passed down to
->> sesion when complete.
->
-> - **Layer 5 -- Session**
->> Try to set up a connection with other computer across the network.
->>
->> Send back error if can't.
->>
->> If a session *can* be established then this layer will maintain it,
->> as well as co-operate with the session layer of the *remote computer*
->> in order to synchronise communications. Session created is **unique**
->> to the communication in question. Allows for multiple requests to
->> different endpoints without data being mixed up.
->
-> - **Layer 4 -- Transport**
->> Servers numerous important functions.
->>
->> 1. Choose protocol over which the data is to be transmitted.
->>     1. TCP -- Transmission Control Protocol
->>     1. UDP -- User Datagram Protocol
->>
->> **TCP**
->>> *Connection based*: Connection between computers is established
->>> and maintained for the duration of the request. Allows for 
->>> reliable transmission, ensure data is sent at an acceptable
->>> speed and lost data is re-sent. Would be chosen if accuracy
->>> is favoured over speed. (e.g. file transfer or loading web page)
->>
->> **UDP**
->>> *Session based*: Packets of data is thrown at the receiving computer
->>> and if it can't keep up then that's its problem. Would be chosen
->>> if speed is favoured over accuracy. (e.g. video streaming)
->>
->> 2. Divides the transmission into bite-sized pieces for easier
->> transmission
->>
->> **TCP** : Segments
->>
->> **UDP** : datagrams
->>
-> - **Layer 3 -- Network**
->> Responsible for locating the destination of the request. Takes IP
->> address and figure out best route to take. Most common form of
->> logical addressing (IP addresses) is IPV4 format.
->>
-> - **Layer 2 -- Data Link**
->> Focus on physical addressing of the transmission. Receives packets
->> from network layer (includes IP address for the remote computer) and
->> adds in the physical (MAC) address of the receiving endpoint. Every
->> network enabled computer has a Network Interface Card (NIC) which
->> comes with a unique Media Access Control (MAC) address to identify it.
->>
->> MAC addresses are set by manufacturer and literally burnt into the
->> card; they can't be changed -- although they can be spoofed.
->>
->> This layer also present the data in a format suitable for 
->> transmission.
->>
->> This layer also checks the received information to make sure it hasn's
->> been corrupted during transmission, which could well happen on 
->> layer 1.
->>
-> - **Layer 1 -- Physical**
->> Right down to the hardware of the computer. Electrical pulses makes up
->> data transfer over a network are sent and received. Converts binary
->> data of transmission into signals and transmit them accross the
->> network, as well as receiving incoming signals and converting back to
->> binary data.
+- **Layer 7 -- Application**
+Provides networking options to programs. Works almost exclusively
+with applications, providing interface for transmitting data. Data
+passed down to presentation layer
+
+- **Layer 6 -- Presentation**
+Receives data from application layer. Data tends to be in format 
+where app understand but not standardised format that can be
+understand by the application layer of the *receiving computer*.
+This layer translate the data to standardised format, handling any
+encryption, compression or other transformation. Passed down to
+sesion when complete.
+
+- **Layer 5 -- Session**
+Try to set up a connection with other computer across the network.
+
+Send back error if can't.
+
+If a session *can* be established then this layer will maintain it,
+as well as co-operate with the session layer of the *remote computer*
+in order to synchronise communications. Session created is **unique**
+to the communication in question. Allows for multiple requests to
+different endpoints without data being mixed up.
+
+- **Layer 4 -- Transport**
+Servers numerous important functions.
+
+1. Choose protocol over which the data is to be transmitted.
+    1. TCP -- Transmission Control Protocol
+    1. UDP -- User Datagram Protocol
+
+**TCP**
+> *Connection based*: Connection between computers is established
+> and maintained for the duration of the request. Allows for 
+> reliable transmission, ensure data is sent at an acceptable
+> speed and lost data is re-sent. Would be chosen if accuracy
+> is favoured over speed. (e.g. file transfer or loading web page)
+
+**UDP**
+> *Session based*: Packets of data is thrown at the receiving computer
+> and if it can't keep up then that's its problem. Would be chosen
+> if speed is favoured over accuracy. (e.g. video streaming)
+
+2. Divides the transmission into bite-sized pieces for easier
+transmission
+
+**TCP** : Segments
+
+**UDP** : datagrams
+
+- **Layer 3 -- Network**
+Responsible for locating the destination of the request. Takes IP
+address and figure out best route to take. Most common form of
+logical addressing (IP addresses) is IPV4 format.
+
+- **Layer 2 -- Data Link**
+Focus on physical addressing of the transmission. Receives packets
+from network layer (includes IP address for the remote computer) and
+adds in the physical (MAC) address of the receiving endpoint. Every
+network enabled computer has a Network Interface Card (NIC) which
+comes with a unique Media Access Control (MAC) address to identify it.
+
+MAC addresses are set by manufacturer and literally burnt into the
+card; they can't be changed -- although they can be spoofed.
+
+This layer also present the data in a format suitable for 
+transmission.
+
+This layer also checks the received information to make sure it hasn's
+been corrupted during transmission, which could well happen on 
+layer 1.
+
+- **Layer 1 -- Physical**
+Right down to the hardware of the computer. Electrical pulses makes up
+data transfer over a network are sent and received. Converts binary
+data of transmission into signals and transmit them accross the
+network, as well as receiving incoming signals and converting back to
+binary data.
 
 ------------------------------------------------------------------------
 
@@ -132,18 +132,14 @@ Physical |
 
 ![Process Steps](image.jpeg)
 
-> Encapsulated data is given a different name at different steps of the
-> process.
-> 
->> - Layers 7, 6, 5 	: data.
->>
->> - Transport Layer 	: segment or datagram.
->>
->> - Network Layer 		: packet
->>
->> - Data Link Layer 	: frame
->>
->> - Physical layer 	: bits  
+Encapsulated data is given a different name at different steps of the
+process.
+ 
+- Layers 7, 6, 5 	: data.
+- Transport Layer 	: segment or datagram.
+- Network Layer 	: packet
+- Data Link Layer 	: frame
+- Physical layer 	: bits  
 
 ------------------------------------------------------------------------
 
@@ -167,12 +163,12 @@ Physical |
 
 ## THE TCP/IP MODEL
 
-> Very similiar to OSI Model. A few year older and serves as the basis
-> for real-world networking.
->
-> Four layers: Application, Transport, Internet and Network Interface.
-> 
->Cover the same range of functions as the seven layers of OSI Model.
+Very similiar to OSI Model. A few year older and serves as the basis
+for real-world networking.
+
+Four layers: Application, Transport, Internet and Network Interface.
+ 
+Cover the same range of functions as the seven layers of OSI Model.
 
 **OSI** | **TCP/IP**
 --------|-----------
@@ -184,15 +180,15 @@ Network | Internet
 Data Link | Network Interface
 Physical | Network Interface
 
-> Three-way handshake must be carried out before a connection can be
-> established using TCP.
-> 1. Special request sent to remote server containing SYN (synchronise)
-> bit.
->
-> 2. Remote server respond with packet containing SYN bit and ACK
-> (acknowledge) bit.
->
-> 3. Send packet containing ACK bit, confirming the connection.
+Three-way handshake must be carried out before a connection can be
+established using TCP.
+1. Special request sent to remote server containing SYN (synchronise)
+bit.
+
+2. Remote server respond with packet containing SYN bit and ACK
+(acknowledge) bit.
+
+3. Send packet containing ACK bit, confirming the connection.
 
 ------------------------------------------------------------------------
 
@@ -228,20 +224,20 @@ Physical | Network Interface
 
 ## WIRESHARK
 
-> - **Frame 1**
->> Showing details from the pysical layer
->>
-> - **Ethernet II**
->> Showing details from the Data Link layer
->>
-> - **Internet Protocol Version 4**
->> Showing details from the Network layer
->>
-> - **Transmission Control Protocol**
->> Showing details from the Transport layer
->>
-> - **Hypertext Transfer Protocol**
->> Showing details from the Application layer
+- **Frame 1**
+Showing details from the pysical layer
+
+- **Ethernet II**
+Showing details from the Data Link layer
+
+- **Internet Protocol Version 4**
+Showing details from the Network layer
+
+- **Transmission Control Protocol**
+Showing details from the Transport layer
+
+- **Hypertext Transfer Protocol**
+Showing details from the Application layer
 
 ------------------------------------------------------------------------
 
@@ -270,9 +266,9 @@ Physical | Network Interface
 
 ### PING
 
-> Can be used to determine the IP address as well
->
->Pretty much ubiquitous to any network enabled device.
+Can be used to determine the IP address as well
+
+Pretty much ubiquitous to any network enabled device.
 ```
 ping <target>
 ```
@@ -300,8 +296,8 @@ What is the IP address?**
 
 ### Traceroute
 
-> Allows us to see every intemediate step between host computer and
-> remote computer.
+Allows us to see every intemediate step between host computer and
+remote computer.
 ```
 traceroute <destination>
 ```
@@ -322,13 +318,13 @@ traceroute <destination>
 
 ### WHOIS
 
-> Query who a domain name is registered to.
+Query who a domain name is registered to.
 ```
 whois <domain>
 ```
->
-> Personal details are redacted in Europe but elsewhere great deal
-> of information can potentially be leaked.
+
+Personal details are redacted in Europe but elsewhere great deal
+of information can potentially be leaked.
 
 ------------------------------------------------------------------------
 
@@ -352,7 +348,7 @@ whois <domain>
 
 ### DIG
 
-> Manually query recursive DNS servers of your choice for info
+Manually query recursive DNS servers of your choice for info
 
 ```
 dig <domain> @<dns-server-ip>
