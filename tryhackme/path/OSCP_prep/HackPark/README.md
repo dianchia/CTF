@@ -2,7 +2,7 @@
 
 ## BASIC INFO
 ```
-export IP=10.10.55.244
+export IP=10.10.58.41
 
 80/tcp   open  http               Microsoft IIS httpd 8.5
 | http-methods: 
@@ -91,7 +91,7 @@ Then we should get a meterpreter on msfconsole now.
 >> Windows 2012 R2 (6.3 Build 9600)
 
 > - **What is the name of the abnormal service running?**
->> Answer not found yet...
+>> WindowsScheduler.exe
 
 > - **What is the name of the binary you're supposed to exploit?**
 >> Message.exe
@@ -102,3 +102,12 @@ What is the user flag (on Jeffs Desktop)?**
 
 > - **What is the root flag?**
 >> 7e13d97f05f7ceb9881a3eb3d78d3e72
+
+## PRIVILEGE ESCALATION WITHOUT METASPLOIT
+
+Using msfvenom again set the payload to `windows/shell_reverse_tcp`\
+Then upload it with powershell as above.\
+After we got a shell, upload winPEAS.bat the same way.
+
+> - **Using winPeas, what was the Original Install time? (This is date and time)**
+>> 8/3/2019, 10:43:23 AM
