@@ -12,6 +12,6 @@ Running strings on the binary reveals the password
 
 Using ghidra.
 
-##CRACKME 3
+## CRACKME 3
 > - **What are the first 3 letters of the correct password?**
 >>
