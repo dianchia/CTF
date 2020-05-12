@@ -60,3 +60,5 @@ shell
 >> dff0f748678f280250f25a45b8046b4a
 
 _**Remember to migrate to spoolsv.exe or services.exe first or else you can't find the flag**_
+
+<script src="https://tryhackme.com/badge/3978"></script>
