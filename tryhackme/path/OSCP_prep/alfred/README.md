@@ -61,4 +61,4 @@ shell
 
 _**Remember to migrate to spoolsv.exe or services.exe first or else you can't find the flag**_
 
-![badges](https://tryhackme-badges.s3.amazonaws.com/dianchia.png)
+![badges](../../../badges/dianchia.png)
