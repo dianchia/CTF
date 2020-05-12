@@ -1,0 +1,83 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.1
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://10.10.178.233/retro/ [10.10.178.233]
+[32m[+][0m Started: Tue May 12 22:12:30 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Microsoft-IIS/10.0
+ |  - X-Powered-By: PHP/7.1.29
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://10.10.178.233/retro/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://10.10.178.233/retro/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://10.10.178.233/retro/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.2.1 identified (Insecure, released on 2019-05-21).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://10.10.178.233/retro/index.php/feed/, <generator>https://wordpress.org/?v=5.2.1</generator>
+ |  - http://10.10.178.233/retro/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.2.1</generator>
+
+[32m[+][0m WordPress theme in use: 90s-retro
+ | Location: http://10.10.178.233/retro/wp-content/themes/90s-retro/
+ | Latest Version: 1.4.10 (up to date)
+ | Last Updated: 2019-04-15T00:00:00.000Z
+ | Readme: http://10.10.178.233/retro/wp-content/themes/90s-retro/readme.txt
+ | Style URL: http://10.10.178.233/retro/wp-content/themes/90s-retro/style.css?ver=5.2.1
+ | Style Name: 90s Retro
+ | Style URI: https://organicthemes.com/retro-theme/
+ | Description: Have you ever wished your WordPress blog looked like an old Geocities site from the 90s!? Probably n...
+ | Author: Organic Themes
+ | Author URI: https://organicthemes.com
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.4.10 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.10.178.233/retro/wp-content/themes/90s-retro/style.css?ver=5.2.1, Match: 'Version: 1.4.10'
+
+
+[34m[i][0m No plugins Found.
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Tue May 12 22:12:34 2020
+[32m[+][0m Requests Done: 2
+[32m[+][0m Cached Requests: 32
+[32m[+][0m Data Sent: 572 B
+[32m[+][0m Data Received: 1.929 KB
+[32m[+][0m Memory used: 193.012 MB
+[32m[+][0m Elapsed time: 00:00:03
