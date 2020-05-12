@@ -11,3 +11,4 @@ open port:
 Gobuster found /bin on the server.\
 Downloaded brainpan.exe from the server.\
 
+![badges](../../../badges/dianchia.png)

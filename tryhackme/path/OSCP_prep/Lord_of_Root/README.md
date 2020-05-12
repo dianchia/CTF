@@ -59,3 +59,5 @@ Running them show that we need to provide a string to it. Assume it is buffer ov
 
 > - **Who wrote the message in the flag message in the roots home directory?**
 >> Gandalf
+
+![badges](../../../badges/dianchia.png)

@@ -30,3 +30,5 @@ Now right click on the executable and choose 'run as administrator'. A screen wi
 
 Download this [CVE-2017-0213_x64.exe](https://github.com/SecWiki/windows-kernel-exploits/tree/master/CVE-2017-0213)\
 Then upload it to the machine. Run it and we are admin.
+
+![badges](../../../badges/dianchia.png)

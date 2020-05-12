@@ -111,3 +111,5 @@ After we got a shell, upload winPEAS.bat the same way.
 
 > - **Using winPeas, what was the Original Install time? (This is date and time)**
 >> 8/3/2019, 10:43:23 AM
+
+![badges](../../../badges/dianchia.png)

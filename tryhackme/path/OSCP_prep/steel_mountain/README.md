@@ -87,3 +87,5 @@ We need to run it twice for it to work. First time it will request the nc.exe fr
 >> powershell -c Get-Service
 
 Then we just repeat the same process as above to escalate to admin.
+
+![badges](../../../badges/dianchia.png)

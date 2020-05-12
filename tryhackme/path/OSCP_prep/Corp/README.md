@@ -49,3 +49,5 @@ Go to `C:\Users\fela.CORP`, when it prompt to gain access click yes and use the 
 
 > - **Now we have the Administrator's password, login as them and obtain the last flag.**
 >> THM{g00d_j0b_SYS4DM1n_M4s73R}
+
+![badges](../../../badges/dianchia.png)

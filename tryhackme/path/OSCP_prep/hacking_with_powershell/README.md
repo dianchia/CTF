@@ -129,3 +129,5 @@ $exec = Get-ChildItem $path -recurse | Select-String -pattern password
 
 > - **How many open ports did you find between 130 and 140(inclusive of those two)?**
 >> 11
+
+![badges](../../../badges/dianchia.png)

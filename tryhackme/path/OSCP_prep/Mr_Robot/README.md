@@ -52,3 +52,5 @@ nmap --interactive
 ```
 
 Now we are root. `cat /root/key-3-of-3.txt`
+
+![badges](../../../badges/dianchia.png)

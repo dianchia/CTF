@@ -59,3 +59,5 @@ sudo yum -c $TF/x --enableplugin=y
 cd into tmp and create a file name shell. Copy this into shell and make it executable. THen run it and we are root now.
 > - **What is the root flag?**
 >> eec3d53292b1821868266858d7fa6f79
+
+![badges](../../../badges/dianchia.png)

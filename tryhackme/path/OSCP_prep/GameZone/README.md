@@ -73,3 +73,5 @@ Using searchsploit we know this version of webmin is vulnerable to `'/file/show.
 Fire up msfconsole, `use exploit/unix/webapp/webmin_show_cgi_exec`\
 Then we set the RHOSTS to localhost, username to agent47 and password to videogamer124. Then the LHOST to tun0 and SSL to false.\
 Now run the exploit and we should get a shell. `cat root.txt` once we got a shell.
+
+![badges](../../../badges/dianchia.png)

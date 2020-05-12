@@ -61,3 +61,5 @@ Wait for a moment then we run `sudo -l` to confirm that our exploit has been suc
 User www-data may run the following commands on skynet:
 	(root) NOPASSWD: ALL
 ```
+
+![badges](../../../badges/dianchia.png)
