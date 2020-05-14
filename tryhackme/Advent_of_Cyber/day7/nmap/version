@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Fri May 15 01:08:52 2020 as: nmap -p22,111,999 -sC -sV -oN nmap/version 10.10.220.150
+Nmap scan report for 10.10.220.150
+Host is up (0.21s latency).
+
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 e9:a7:be:4f:65:d3:41:f8:d1:b3:9b:7e:86:ef:a8:b7 (RSA)
+|   256 19:c0:ba:8f:fb:fd:4a:77:d6:a1:cb:63:ab:5e:a7:3a (ECDSA)
+|_  256 37:b7:82:83:12:f8:41:39:d8:7a:2a:31:5e:8a:01:46 (ED25519)
+111/tcp open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          32848/udp   status
+|   100024  1          39765/tcp   status
+|   100024  1          53317/tcp6  status
+|_  100024  1          53491/udp6  status
+999/tcp open  http    SimpleHTTPServer 0.6 (Python 3.6.8)
+|_http-server-header: SimpleHTTP/0.6 Python/3.6.8
+|_http-title: Directory listing for /
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 15 01:09:13 2020 -- 1 IP address (1 host up) scanned in 20.37 seconds

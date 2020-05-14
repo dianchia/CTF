@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Fri May 15 01:15:55 2020 as: nmap -p65534 -sC -sV -oN nmap/version -T4 10.10.166.7
+Nmap scan report for 10.10.166.7
+Host is up (0.22s latency).
+
+PORT      STATE SERVICE VERSION
+65534/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 00:59:59:c1:ba:34:42:ea:ff:1d:3b:34:1a:76:b8:08 (RSA)
+|   256 95:67:31:7a:f4:5c:20:33:8e:24:f7:d3:38:83:30:33 (ECDSA)
+|_  256 5c:2e:3c:98:94:01:88:df:7b:bf:77:fe:a8:31:a7:d6 (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 15 01:16:02 2020 -- 1 IP address (1 host up) scanned in 7.42 seconds
