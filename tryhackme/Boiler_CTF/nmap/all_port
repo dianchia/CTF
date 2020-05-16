@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Sun May 17 00:15:09 2020 as: nmap -p- -oN nmap/all_port -T4 10.10.25.92
+Nmap scan report for 10.10.25.92
+Host is up (0.19s latency).
+Not shown: 65531 closed ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+80/tcp    open  http
+10000/tcp open  snet-sensor-mgmt
+55007/tcp open  unknown
+
+# Nmap done at Sun May 17 00:29:24 2020 -- 1 IP address (1 host up) scanned in 854.77 seconds
