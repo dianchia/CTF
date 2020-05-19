@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Sun May 17 19:50:05 2020 as: nmap -oN nmap/initial 10.10.176.5
+Nmap scan report for cmess.thm (10.10.176.5)
+Host is up (0.20s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Sun May 17 19:50:08 2020 -- 1 IP address (1 host up) scanned in 2.46 seconds
