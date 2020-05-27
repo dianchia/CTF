@@ -1,0 +1,105 @@
+# Nmap 7.80 scan initiated Wed May 27 16:47:23 2020 as: nmap -sC -sV -oN nmap/initial -T4 10.10.179.204
+Nmap scan report for 10.10.179.204
+Host is up (0.26s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0e:ad:33:fc:1a:1e:85:54:64:13:39:14:68:09:c1:70 (RSA)
+|   256 54:03:9b:48:55:de:b3:2b:0a:78:90:4a:b3:1f:fa:cd (ECDSA)
+|_  256 4e:0c:e6:3d:5c:08:09:f4:11:48:85:a2:e7:fb:8f:b7 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.6.40)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.6.40
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+3000/tcp open  ppp?
+| fingerprint-strings: 
+|   GenericLines, Help: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=18ece186d8cfb0f9; Path=/; HttpOnly
+|     Set-Cookie: _csrf=vLaXz5aLlvYmxLxTcKPhSxWJrvA6MTU5MDU2OTE2MTM1OTI5NTE2MQ; Path=/; Expires=Thu, 28 May 2020 08:46:01 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Wed, 27 May 2020 08:46:01 GMT
+|     <!DOCTYPE html>
+|     <html lang="en-US">
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title> Symfonos6</title>
+|     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+|     <script>
+|     ('serviceWorker' in navigator) {
+|     navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+|     console.info('ServiceWorker registration successful with scope: ', registrat
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=01cdcb6f8d3c5d89; Path=/; HttpOnly
+|     Set-Cookie: _csrf=wcsL2DDP3l5dHbpbgBUHL4iqedU6MTU5MDU2OTE2NzkxNzY5NjczMg; Path=/; Expires=Thu, 28 May 2020 08:46:07 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Wed, 27 May 2020 08:46:07 GMT
+|     <!DOCTYPE html>
+|     <html lang="en-US">
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title>Page Not Found - Symfonos6</title>
+|     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+|     <script>
+|     ('serviceWorker' in navigator) {
+|     navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+|_    console.info('ServiceWorker registration successful
+3306/tcp open  mysql   MariaDB (unauthorized)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.80%I=7%D=5/27%Time=5ECE2926%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(GetRequest,2924,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\
+SF:x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path=/;
+SF:\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=18ece186d8cfb0f9;
+SF:\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=vLaXz5aLlvYmxLxTcKPhSxW
+SF:JrvA6MTU5MDU2OTE2MTM1OTI5NTE2MQ;\x20Path=/;\x20Expires=Thu,\x2028\x20Ma
+SF:y\x202020\x2008:46:01\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x20SAMEOR
+SF:IGIN\r\nDate:\x20Wed,\x2027\x20May\x202020\x2008:46:01\x20GMT\r\n\r\n<!
+SF:DOCTYPE\x20html>\n<html\x20lang=\"en-US\">\n<head\x20data-suburl=\"\">\
+SF:n\t<meta\x20charset=\"utf-8\">\n\t<meta\x20name=\"viewport\"\x20content
+SF:=\"width=device-width,\x20initial-scale=1\">\n\t<meta\x20http-equiv=\"x
+SF:-ua-compatible\"\x20content=\"ie=edge\">\n\t<title>\x20Symfonos6</title
+SF:>\n\t<link\x20rel=\"manifest\"\x20href=\"/manifest\.json\"\x20crossorig
+SF:in=\"use-credentials\">\n\t\n\t<script>\n\t\tif\x20\('serviceWorker'\x2
+SF:0in\x20navigator\)\x20{\n\t\t\tnavigator\.serviceWorker\.register\('/se
+SF:rviceworker\.js'\)\.then\(function\(registration\)\x20{\n\t\t\t\t\n\t\t
+SF:\t\tconsole\.info\('ServiceWorker\x20registration\x20successful\x20with
+SF:\x20scope:\x20',\x20registrat")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\
+SF:x20close\r\n\r\n400\x20Bad\x20Request")%r(HTTPOptions,216B,"HTTP/1\.0\x
+SF:20404\x20Not\x20Found\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r
+SF:\nSet-Cookie:\x20lang=en-US;\x20Path=/;\x20Max-Age=2147483647\r\nSet-Co
+SF:okie:\x20i_like_gitea=01cdcb6f8d3c5d89;\x20Path=/;\x20HttpOnly\r\nSet-C
+SF:ookie:\x20_csrf=wcsL2DDP3l5dHbpbgBUHL4iqedU6MTU5MDU2OTE2NzkxNzY5NjczMg;
+SF:\x20Path=/;\x20Expires=Thu,\x2028\x20May\x202020\x2008:46:07\x20GMT;\x2
+SF:0HttpOnly\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Wed,\x2027\x20M
+SF:ay\x202020\x2008:46:07\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=
+SF:\"en-US\">\n<head\x20data-suburl=\"\">\n\t<meta\x20charset=\"utf-8\">\n
+SF:\t<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20initia
+SF:l-scale=1\">\n\t<meta\x20http-equiv=\"x-ua-compatible\"\x20content=\"ie
+SF:=edge\">\n\t<title>Page\x20Not\x20Found\x20-\x20\x20Symfonos6</title>\n
+SF:\t<link\x20rel=\"manifest\"\x20href=\"/manifest\.json\"\x20crossorigin=
+SF:\"use-credentials\">\n\t\n\t<script>\n\t\tif\x20\('serviceWorker'\x20in
+SF:\x20navigator\)\x20{\n\t\t\tnavigator\.serviceWorker\.register\('/servi
+SF:ceworker\.js'\)\.then\(function\(registration\)\x20{\n\t\t\t\t\n\t\t\t\
+SF:tconsole\.info\('ServiceWorker\x20registration\x20successful\x20");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 27 16:49:16 2020 -- 1 IP address (1 host up) scanned in 113.63 seconds
