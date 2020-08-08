@@ -1,0 +1,9 @@
+#Ghidra Lock File
+#Sat Aug 08 17:06:29 MYT 2020
+OS\ Name=Linux
+OS\ Version=5.5.0-1parrot1-amd64
+Username=root
+Hostname=dianchia
+<META>\ Supports\ File\ Channel\ Locking=Channel Lock
+OS\ Architecture=amd64
+Timestamp=8/8/20, 5\:06 PM
