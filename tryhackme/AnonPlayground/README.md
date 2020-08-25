@@ -15,12 +15,12 @@ A = 1
 magna:magnaisanelephant
 ```
 
-
 After ssh into the machine with the credentials, we got the first flag.
 ```
 flag1 = 9184177ecaa83073cbbf36f1414cc029
 ```
 
+## FLAG 2
 In the home drectory of magna, there is a binary call hacktheworld. This binary also has a setuid bit set. After downloading it, I open it using ghidra. The vulnerable part in the code is the `gets()` function which is vulnerable towards buffer overflow. There is also a `call_bash` function which set the uid after some command and call bash. So I just need to exploit this and we should be able to proceed to the next user.
 
 After a few tries, 72 'A's is the perfect sie for overflowing the buffer. Then the address of the `call_bash` function, which I got from running `readelf -s ./hacktheworld | grep -i call_bash`, was appended to the payload. Notice that there is a `cat` command after the printing with python. This is to prevent the shell from closing immediately due to no input was provided.
@@ -33,6 +33,7 @@ Running the command above, we're now in as spooky. Navigate to his home director
 flag2 = 69ee352fb139c9d0699f6f399b63d9d7
 ```
 
+## FLAG 3
 Now onto the road of rooting the machine. Checking on the `/etc/crontab`, we see that there is a command `cd /home/spooky && tar -zcf /var/backups/spooky.tgz *`, which is run by root every minute. This is a well known exploit of tar, the wildcard exploit! 
 
 ```
